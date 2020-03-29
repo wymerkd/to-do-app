@@ -27,7 +27,7 @@ let todoList = {
     this.todos[position].todoText = todoText;
     this.displayTodos();
   },
-  deleteTodo: function(position) {
+  deleteTodo: function (position) {
     this.todos.splice(position, 1);
     this.displayTodos();
   },
@@ -75,3 +75,4 @@ document.addEventListener("DOMContentLoaded", function() {
     todoList.toggleAll();
   });
 });
+
