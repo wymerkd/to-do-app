@@ -61,3 +61,11 @@ let todoList = {
     this.displayTodos();
   }
 };
+
+let displayTodosButton = document.getElementById('displayTodosButton');
+console.log(displayTodosButton);
+
+displayTodosButton.addEventListener('click', function() {
+  todoList.displayTodos();
+});
+
