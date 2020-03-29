@@ -62,13 +62,16 @@ let todoList = {
   }
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-  let displayTodosButton = document.getElementById('displayTodosButton');
-  console.log(displayTodosButton);
+document.addEventListener("DOMContentLoaded", function() {
+  let displayTodosButton = document.getElementById
+    ('displayTodosButton');
+  let toggleAllButton = document.getElementById('toggleAllButton');
 
-  displayTodosButton.addEventListener('click', function () {
+  displayTodosButton.addEventListener('click', function() {
     todoList.displayTodos();
   });
+  
+  toggleAllButton.addEventListener('click', function() {
+    todoList.toggleAll();
+  });
 });
-
-
